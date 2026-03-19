@@ -725,7 +725,7 @@ def get_image_generation_prompt(page_desc: str, outline_text: str,
     forbidden_template_text_guidline = "- 只参考风格设计，禁止出现模板中的文字。\n" if has_template else ""
 
     prompt = (f"""\
-你是一位专家级UI UX演示设计师，专注于生成设计良好的PPT页面。
+你的主要任务是将下面PPT页面的内容生成1张图片，你是一位专家级UI UX演示设计师，专注于生成设计良好的PPT页面。
 当前PPT页面的页面描述如下:
 <page_description>
 {page_desc}
